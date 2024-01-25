@@ -1,4 +1,4 @@
-const colors = ["Red", "Green", "Blue"];
+const colors = ['Red', 'Green', 'Blue'];
 
 function pickRandomColor() {
     return colors[Math.random() * colors.length];
@@ -7,4 +7,9 @@ function pickRandomColor() {
 function changeText(newText) {
     const textbox = document.querySelector('.center-text');
     textbox.textContent = newText;
+}
+
+function changeBackColor(newColor) {
+    const bgdiv = document.querySelector('.back-div');
+    bgdiv.style.backgroundColor = newColor;
 }
