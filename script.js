@@ -1,7 +1,7 @@
 const colors = ['Red', 'Green', 'Blue'];
 
 function pickRandomColor() {
-    return colors[Math.random() * colors.length];
+    return colors[Math.floor(Math.random() * colors.length)];
 }
 
 function changeText(newText) {
@@ -13,3 +13,12 @@ function changeBackColor(newColor) {
     const bgdiv = document.querySelector('.back-div');
     bgdiv.style.backgroundColor = newColor;
 }
+
+function updateColor() {
+    const newColor = pickRandomColor();
+
+    changeText('Background color : ' + newColor);
+    changeBackColor(newColor);
+}
+
+updateColor();
