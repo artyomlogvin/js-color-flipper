@@ -22,3 +22,7 @@ function updateColor() {
 }
 
 updateColor();
+
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', updateColor);
